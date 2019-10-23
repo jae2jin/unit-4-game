@@ -1,0 +1,31 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background-image: url(../images/background2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  color: black;
+
+}
+.jumbotron {
+  background:url('../images/background.jpg') top center;
+  background-size: cover;
+  padding-top: 12em;
+  flex: 1;
+}
+.jumbotron h1 {
+  margin: 0 auto;
+
+  font-size: 500%;
+  color: whitesmoke;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  vertical-align: middle;
+  display: table-cell;
+  max-width: 500px;
+
+ 

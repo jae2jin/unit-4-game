@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homework 4 Game Crystal</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-        <div class="container">
+    <div class="container">
         <div class="jumbotron header">
-                <div class="row text-center">
-        <h1 class="display-4 text-center">Crystal Collector</h1>
+            <div class="row text-center">
+                <h1 class="display-4 text-center">Crystal Collector</h1>
             </div>
         </div>
         <div class="row text-center">
-                <div class="container">
+            <div class="container">
                 <h2 class="display-2">Instructions</h2>
                 <p class="rules">You will be given a random number at the start of the game.</p>
                 <p class="rules">There are four crystals below. By clicking on a crystal you will add a specific amount
@@ -34,50 +34,65 @@
         </div>
 
         <br><br><br>
-                <div class="container">
-                <div class="row text-center">
-            <div class="randomNumber d-block p-2 bg-dark text-white"><h2 class="display-2">Random Generated Number</h2></div>
-            <div class="Scorecounter">
-                <div class="wins text-center"><h2 class="display-4">Wins</h2></div>
-                <div class="losses text-center"><h2 class="display-4">Losses</h2></div>
-            </div>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="container">
+        <div class="container">
             <div class="row text-center">
-            <div class="col-lg-3">
-                    <img src="assets/images/img1.jpg" class="" alt="...">
+                <div class="randomNumber d-block p-2 bg-dark text-white">
+                    <h2 class="display-2">AIM FOR THIS NUMBER</h2>
+                    <div id="numberTarget"></div>
+                </div>
+                <div class="Scorecounter">
+                    <div class="wins text-center">
+                        <h2 class="display-4">Wins</h2>
+                        <div id="wins">0</div>
+                    </div>
+                    <div class="losses text-center">
+                        <h2 class="display-4">Losses</h2>
+                        <div id="losses">0</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3">
-                    <img src="assets/images/img2.jpg" class="" alt="...">
-            </div>
-            <div class="col-lg-3">
-                    <img src="assets/images/img3.jpg" class="" alt="...">
-            </div>
-            <div class="col-lg-3">
-                    <img src="assets/images/img4.jpg" class="" alt="...">  
         </div>
-    </div>
-</div>
         <br><br><br>
-                <div class="container">
-                <div class="row text-center">
-                    <div class="TLScore"><h2 class="display-4">Your total score is</h2></div>
-                </div>
-            </div>
-            <br><br><br>
-            <div class="container">
+        <div class="container">
             <div class="row text-center">
-                    <div class="scoreDisplay"><h2 class="display-4">Your Score</h2></div>
+                <div class="TLScore">
+                    <h2 class="display-4">YOUR CURRENT SCORE</h2>
+                    <div id="score">0</div>
                 </div>
             </div>
         </div>
-                <br><br><br>
+        <br><br><br>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3">
+                    <button class='colorButton' id='gem1'>
+                        <img src="assets/images/img1.jpg" alt="redButton">
+                    </button>
+                </div>
+                <div class="col-lg-3">
+                    <button class='colorButton' id='gem2'>
+                        <img src="assets/images/img2.jpg" alt="blueButton">
+                    </button>
+                </div>
+                <div class="col-lg-3">
+                    <button class='colorButton' id='gem3'>
+                        <img src="assets/images/img3.jpg" alt="yellowButton">
+                    </button>
+                </div>
+                <div class="col-lg-3">
+                    <button class='colorButton' id='gem4'>
+                        <img src="assets/images/img4.jpg" alt="greenButton">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
 
 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
